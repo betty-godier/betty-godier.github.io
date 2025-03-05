@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #003973, #005f99);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .sticky-header {
+            background: rgba(0, 73, 144, 0.9);
+            padding: 15px;
+            text-align: center;
+        }
+        .hero-section {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(to right, #006699, #0099cc);
+        }
+        .btn {
+            background: #007acc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #005f99;
+        }
+        .footer {
+            background: #002f4b;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky-header">
+        <h1 class="fade-in">My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h2 class="slide-in">Welcome to My Portfolio</h2>
+            <p class="fade-in">Showcasing my future projects in a modern and minimalistic way.</p>
+            <a href="#projects" class="btn glow">View Projects</a>
+        </div>
+    </section>
+    
+    <section id="about" class="slide-in">
+        <h2>About Me</h2>
+        <p>I'm a passionate developer building creative and innovative projects.</p>
+    </section>
+    
+    <section id="projects" class="fade-in">
+        <h2>My Projects</h2>
+        <div class="project-grid" id="project-list">
+            <!-- Projects will be dynamically inserted here -->
+        </div>
+    </section>
+    
+    <section id="contact" class="slide-in contact-section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or just to say hi!</p>
+        <a href="mailto:your.email@example.com" class="btn contact-btn">Say Hello</a>
+    </section>
+    
+    <footer class="fade-in footer">
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
